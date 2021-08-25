@@ -1,0 +1,51 @@
+{% extends "index.html" %}
+{% block title %}Adding new Card...{% endblock %}
+{% block content %}
+<div class="mb-3">
+  <label for="nobj" class="form-label">Name of Objective:</label>
+  <input type="text" class="form-control" id="nobj" placeholder=""><!-- in placeholder inserisci quello che vuoi-->
+</div>
+<input class="form-control" type="text" value="Select just one checkbox please..." aria-label="readonly input example" readonly>
+<!-- accordition -->
+<div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+    <!--checkbox-->
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+
+        </label>
+      </div>
+    <!--endcheck-->
+    <h2 class="accordion-header" id="flush-headingOne">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        Concrete
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">You are reaching something like: Studying a book, put money aside, pianification for a purchase(Here we can calculate an ideal path)</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <!--checkbox-->
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+          Default checkbox
+        </label>
+      </div>
+    <!--endcheck-->
+    <h2 class="accordion-header" id="flush-headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+        Abstract
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Reaching something like: changing your way of life (Here you have to select the path of objectives).</div>
+    </div>
+  </div>
+
+</div>
+<!--end of accordition-->
+
+{% endblock %}
